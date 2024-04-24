@@ -1,0 +1,169 @@
+/* External Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('header.jpg') center/cover repeat;
+    height: 150px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+nav ul li a:hover {
+    color: #555555;
+}
+
+main {
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .center img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #home {
+        padding: 20px;
+    }
+}
+
+iframe {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+@media only screen and (min-width: 768px) {
+    iframe {
+        width: 400px; 
+        float: right; 
+        margin-left: 30px; 
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.SEND, .BACK {
+    background-color: #481f01;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.SEND:hover, .BACK:hover {
+    opacity: 1;
+}
+
+/* Slideshow Animation */
+#home img {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+header, main {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.content {
+    display: none; 
+}
+
+
+body.loaded .content {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background: url('footer.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    padding: 20px 0;
+}
